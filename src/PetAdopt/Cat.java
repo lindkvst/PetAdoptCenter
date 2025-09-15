@@ -1,11 +1,11 @@
 package PetAdopt;
 
  class Cat extends Pet {
-     private String sound;
+  //   private String sound;
 
      public Cat(String name) {
-  //       super(name);
-         this.name = name;
+         super(name);
+  //       this.name = name;
          this.type = "Cat";
          this.sound = "Miaw";
      }
