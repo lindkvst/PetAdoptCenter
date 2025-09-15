@@ -24,12 +24,13 @@ public class AdoptTest {
             String petName = Sc.askName();
 
             if (petType.equals("cat")) {
-                Pet[i] = new Cat("")
+                Pet[i] = new Cat(petName, petType, "TEST");
 
             } else if (petType.equals("dog")) {
                 //dog
+                Pet[i] = new Dog(petName, petType, "TEST");
             } else if (petType.equals("lizard")) {
-                //lizard
+                Pet[i] = new Lizard(petName, petType, "TEST");
             } else {
                 System.out.println("");
             }

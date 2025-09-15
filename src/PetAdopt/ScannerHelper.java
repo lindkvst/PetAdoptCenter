@@ -27,15 +27,15 @@ public class ScannerHelper {
         String petType = sc.nextLine();
         boolean correctAnswer = false;
         while (!correctAnswer) {
-            if (petType.equals("dog")) {
+            if (petType.equalsIgnoreCase("dog")) {
                 return petType;
                 correctAnswer = true;
                 break;
-            } else if (petType.equals("cat")) {
+            } else if (petType.equalsIgnoreCase("cat")) {
                 return petType;
                 correctAnswer = true;
                 break;
-            } else if (petType.equals("lizard")) {
+            } else if (petType.equalsIgnoreCase("lizard")) {
                 return petType;
                 correctAnswer = true;
                 break;
