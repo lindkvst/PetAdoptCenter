@@ -27,23 +27,20 @@ public class ScannerHelper {
         String petType = sc.nextLine();
         boolean correctAnswer = false;
         while (!correctAnswer) {
-            if (petType.equals("dog")) {
+            if (petType.equalsIgnoreCase("dog")) {
                 correctAnswer = true;
                 return petType;
-                break;
-            } else if (petType.equals("cat")) {
+            } else if (petType.equalsIgnoreCase("cat")) {
                 correctAnswer = true;
                 return petType;
-                break;
-            } else if (petType.equals("lizard")) {
+            } else if (petType.equalsIgnoreCase("lizard")) {
                 correctAnswer = true;
                 return petType;
-                break;
             } else {
                 System.out.println("Sorry, I didn't quite get that. Please enter a valid type");
             }
         }
-
+        return petType;
     }
 
     public String askName() {
