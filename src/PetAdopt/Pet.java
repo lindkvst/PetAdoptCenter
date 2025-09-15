@@ -14,8 +14,10 @@ class Pet {
     public String toString() {
         return "Pet: " + name + ", type" + type + ", sound" + sound;
     }
+
+    /*
     public void () {
 
     }
-
+*/
 }
