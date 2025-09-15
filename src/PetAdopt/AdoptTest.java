@@ -3,10 +3,11 @@ package PetAdopt;
 public class AdoptTest {
 
     public static void main(String[] args) {
-        RunAdoption();
+        createPets();
+        //      printPets();
     }
 
-    public static void RunAdoption() {
+    public static void createPets() {
 
         //Initialiserer en ScannerHelper til at interagere med brugeren.
 
@@ -14,32 +15,34 @@ public class AdoptTest {
         Sc.welcomeMessage();
 
         //laver array af dyr
-        int numOfPets = Sc.registerPets();
+        int numOfPets = Sc.registerPets(); //trækker en fra så array har rigtig størrelse
 
         Pet[] petCollection = new Pet[numOfPets]; //opretter antal dyr
 
-        for (int i = 0; i <= petCollection.length; i++) {
+        for (int i = 0; i < petCollection.length; i++) {
 
             String petType = Sc.askType();
             String petName = Sc.askName();
 
             if (petType.equals("cat")) {
-                Pet[i] = new Cat(petName);
+                petCollection[i] = new Cat(petName);
 
             } else if (petType.equals("dog")) {
                 //dog
-                Pet[i] = new Dog(petName);
+                petCollection[i] = new Dog(petName);
             } else if (petType.equals("lizard")) {
-                Pet[i] = new Lizard(petName);
-            } else {
-                System.out.println("");
+                petCollection[i] = new Lizard(petName);
             }
-
-
-            //petCollection[i] =
         }
 
 
-    }
-}
+        // printer værdier for dyr
 
+            for (int i = 0; i < petCollection.length; i++) {
+                System.out.println(petCollection[i]);
+            }
+
+    }
+
+
+}

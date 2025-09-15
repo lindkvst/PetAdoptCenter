@@ -38,6 +38,7 @@ public class ScannerHelper {
                 return petType;
             } else {
                 System.out.println("Sorry, I didn't quite get that. Please enter a valid type");
+                return askType();
             }
         }
         return petType;

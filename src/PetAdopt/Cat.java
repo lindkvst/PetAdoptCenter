@@ -5,7 +5,7 @@ package PetAdopt;
 
      public Cat(String name) {
          super(name);
-  //       this.name = name;
+         this.name = name;
          this.type = "Cat";
          this.sound = "Miaw";
      }

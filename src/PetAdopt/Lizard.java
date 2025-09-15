@@ -4,7 +4,7 @@ class Lizard extends Pet {
 //    private String sound;
 
     public Lizard(String name) {
-//       super(name, type, sound);
+       super(name);
         this.name = name;
         this.type = "Lizard";
         this.sound = "Sssss";

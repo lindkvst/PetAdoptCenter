@@ -5,9 +5,8 @@ class Pet {
     protected String type;
     protected String sound;
 
-    public Pet(String name, String type) {
+    public Pet(String name) {
         this.name = name;
-        this.type = type;
     }
 
     @Override
