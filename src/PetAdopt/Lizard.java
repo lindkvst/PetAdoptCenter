@@ -3,9 +3,11 @@ package PetAdopt;
 class Lizard extends Pet {
     private String sound;
 
-    public Lizard(String name, String type) {
-        super(name,type);
-        this.sound = "Ssss";
+    public Lizard(String name) {
+        //       super(name);
+        this.name = name;
+        this.type = "Lizard";
+        this.sound = "Sssss";
     }
 
     @Override

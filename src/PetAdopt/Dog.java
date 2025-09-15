@@ -3,8 +3,10 @@ package PetAdopt;
 class Dog extends Pet {
     private String sound;
 
-    public Dog(String name, String type) {
-        super(name,type);
+    public Dog(String name) {
+        //       super(name);
+        this.name = name;
+        this.type = "Dog";
         this.sound = "Vuf";
     }
 
