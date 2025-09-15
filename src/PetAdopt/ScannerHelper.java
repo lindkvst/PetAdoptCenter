@@ -28,25 +28,29 @@ public class ScannerHelper {
         boolean correctAnswer = false;
         while (!correctAnswer) {
             if (petType.equals("dog")) {
-                return petType;
                 correctAnswer = true;
+                return petType;
                 break;
             } else if (petType.equals("cat")) {
-                return petType;
                 correctAnswer = true;
+                return petType;
                 break;
             } else if (petType.equals("lizard")) {
-                return petType;
                 correctAnswer = true;
+                return petType;
                 break;
             } else {
                 System.out.println("Sorry, I didn't quite get that. Please enter a valid type");
             }
         }
-//        return ;
+
     }
 
     public String askName() {
-        System.out.println("Name: " + );
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Name: ");
+        String petName = sc.nextLine();
+
+        return petName;
     }
 }
