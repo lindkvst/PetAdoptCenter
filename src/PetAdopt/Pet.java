@@ -16,7 +16,7 @@ class Pet {
         return "Pet: " + name + ", type" + type + ", sound" + sound;
     }
     public void () {
-        System.out.println(name + type + "Your cat says: " + sound + "Is added")
+
     }
 
 }
