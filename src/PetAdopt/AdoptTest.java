@@ -18,18 +18,19 @@ public class AdoptTest {
 
         Pet[] petCollection = new Pet[numOfPets]; //opretter antal dyr
 
-        for (int i = 0; i <= petCollection.length; i++) {
+        for (int i = 0, i <= numOfPets, i++) {
 
             String petType = Sc.askType();
             String petName = Sc.askName();
 
             if (petType.equals("cat")) {
-                Pet[i] = new Cat(petType)
+                Pet[i] = new Cat(petName, petType, "TEST");
 
             } else if (petType.equals("dog")) {
                 //dog
+                Pet[i] = new Dog(petName, petType, "TEST");
             } else if (petType.equals("lizard")) {
-                //lizard
+                Pet[i] = new Lizard(petName, petType, "TEST");
             } else {
                 System.out.println("");
             }
