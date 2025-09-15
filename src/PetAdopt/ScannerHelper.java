@@ -43,7 +43,7 @@ public class ScannerHelper {
                 System.out.println("Sorry, I didn't quite get that. Please enter a valid type");
             }
         }
-        return
+//        return ;
     }
 
     public String askName() {
