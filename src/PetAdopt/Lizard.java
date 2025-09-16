@@ -4,19 +4,19 @@ class Lizard extends Pet {
 //    private String sound;
 
     public Lizard(String name) {
-       super(name);
+        super(name);
         this.name = name;
         this.type = "Lizard";
         this.sound = "Sssss";
     }
-
+/*
     @Override
     public String toString(){
-        return this.name + this.type + this.sound;
+        return name + type + sound;
     }
-
-    public void honk(){
-        System.out.println("The " + type + name + "says: " + sound);
+*/
+    public void playSound(){
+        System.out.println("The " + type + " " + name + " says: " + sound);
     }
 
 }

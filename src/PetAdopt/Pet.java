@@ -9,14 +9,14 @@ class Pet {
         this.name = name;
     }
 
+
     @Override
     public String toString() {
-        return "Pet: " + name + ", type" + type + ", sound" + sound;
+        return "Pet: " + name + ", type: " + type + ", sound: " + sound;
     }
 
-    /*
-    public void () {
 
+    public void playSound(){
+            // denne metode er overskrevet på de enkelte subklasser
     }
-*/
 }

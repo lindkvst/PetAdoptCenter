@@ -9,13 +9,13 @@ package PetAdopt;
          this.type = "Cat";
          this.sound = "Miaw";
      }
-
+/*
      @Override
      public String toString(){
-         return this.name + this.type + this.sound;
+         return name + type + sound;
      }
-
-     public void honk(){
-         System.out.println("The " + type + name + "says: " + sound);
+*/
+     public void playSound(){
+         System.out.println("The " + type + " " + name + " says: " + sound);
      }
 }
