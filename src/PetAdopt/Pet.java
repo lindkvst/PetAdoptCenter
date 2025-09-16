@@ -17,6 +17,7 @@ class Pet {
 
 
     public void playSound(){
-            // denne metode er overskrevet på de enkelte subklasser
+            // denne metode er overskrevet på de enkelte subklasser, så nedenstående vises ikke
+        System.out.println("Something is wrong with your poly-morphism"); //vil ikke blive vist
     }
 }

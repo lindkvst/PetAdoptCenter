@@ -16,6 +16,6 @@ class Dog extends Pet {
     }
 */
     public void playSound(){
-        System.out.println("The " + type + " " + name + " says: " + sound);
+        System.out.println(name + " is a " + type + " and says: " + sound);
     }
 }

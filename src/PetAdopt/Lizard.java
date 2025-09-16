@@ -16,7 +16,7 @@ class Lizard extends Pet {
     }
 */
     public void playSound(){
-        System.out.println("The " + type + " " + name + " says: " + sound);
+        System.out.println(sound + " says the " + type + " named " + name);
     }
 
 }
