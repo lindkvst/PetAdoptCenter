@@ -13,43 +13,6 @@ public class ScannerHelper {
         System.out.println("Welcome to the Pet Adoption Center");
         System.out.println("Let's register some animals!");
     }
-/*
-    public int registerPets() {
-        boolean numCorrect = false;
-        int numOfPets;
-        System.out.print("How many pets do you want to register? "); //ikke println - så svaret på spørgsmålet kommer på samme linje
-
-
-        //input validation, så man ikke kan registrere et negativt antal dyr
-        while (!numCorrect) {
-            numOfPets = sc.nextInt();
-            sc.nextLine(); //rydder ENTER fra input bufferen
-
-            if (numOfPets < 0) {
-                System.out.println("You have entered a negative number. Try again!");
-                registerPets();
-            } else if (numOfPets>5) {
-                System.out.println("You have entered too many pets. We can't handle that. Try again!");
-                registerPets();
-            } else {
-                if (numOfPets == 1) {
-                    System.out.println("Looks like we're having an easy day today. Please input your pet to register. \n");
-                    numCorrect = true;
-
-                } else {
-                    System.out.println("Looks like we're going to register " + numOfPets + " pets today. Let's go.\n");
-                    numCorrect = true;
-
-                }
-            }
-        }
-
-
-        return numOfPets;
-    }
-
-
-*/
 
 
     public int registerPets() {
@@ -61,7 +24,7 @@ public class ScannerHelper {
             //da brugeren så får spørgsmålet igen. Ellers ender man i et uendeligt while loop på fejlbeskeden.
 
             System.out.print("How many pets do you want to register? ");
-            if (sc.hasNextInt()) {
+            if (sc.hasNextInt()) { //hasNextInt() er en scanner metode, der sikrer, at brugeren indtaster en integer
                 numOfPets = sc.nextInt();
                 sc.nextLine(); // ryd ENTER fra buffer
 
@@ -80,13 +43,12 @@ public class ScannerHelper {
                     }
                     numCorrect = true; // vi har et gyldigt input, så vi kan forlade loopet
                 }
-            } else {
+            } else { // hvis hasNextInt() fejler, så ender vi her
                 System.out.println("That's not a number. Try again!");
                 sc.nextLine(); // ryd forkert input
             }
         }
-
-        return numOfPets;
+        return numOfPets; //når vi har et gyldigt svar, så returneres svaret som integer
     }
 
     public String askType() {
@@ -109,7 +71,6 @@ public class ScannerHelper {
                 return petType;
             } else {
                 System.out.println("Sorry, I didn't quite get that. Please enter a valid type");
-                return askType();
             }
         }
         return petType;
