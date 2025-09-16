@@ -46,7 +46,7 @@ public class AdoptTest {
 
         }
 
-        System.out.println("Now we're ready to play som sounds!");
+        System.out.println("\nNow we're ready to play som sounds!\n");
 
         //kører vores playSound() metode
         for (int i = 0; i < petCollection.length; i++) {
