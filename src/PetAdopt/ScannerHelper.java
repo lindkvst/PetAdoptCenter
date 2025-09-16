@@ -26,7 +26,7 @@ public class ScannerHelper {
             System.out.print("How many pets do you want to register? ");
             if (sc.hasNextInt()) { //hasNextInt() er en scanner metode, der sikrer, at brugeren indtaster en integer
                 numOfPets = sc.nextInt();
-                sc.nextLine(); // ryd ENTER fra buffer
+                sc.nextLine(); // ryd ENTER fra buffer - dette sikrer at den ikke fejlagtigt tror at enter efter tallet skal tolkes som et svar
 
                 if (numOfPets < 0) {
                     System.out.println("You have entered a negative number. Try again!");
